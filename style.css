@@ -21,6 +21,9 @@
     --card-bg-color: #4a4369;
     --light-bg: #ebebf5;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Poppins", serif;
     overflow-x: hidden;
@@ -41,6 +44,7 @@ body{
     width: 100%;
     z-index: 10000;
     overflow: hidden;
+    gap: 20px;
 }
 .nav-links{
     gap: 20px;
@@ -54,15 +58,20 @@ body{
     border: none;
     transition: all 0.2s linear;
     cursor: pointer;
+    white-space: nowrap;
 }
 .nav-links li a:hover{
-    background-color: var(--primary-color);
+    background-color: #ee35afcc;
+}
+.nav-links li a.active{
+    background-color: #ee35afcc;
 }
 
 .btn, .btn-1, .btn-2{
     display: flex;
     align-items: center;
     justify-content: center;
+    white-space: nowrap;
     padding: 13px 22px;
     border: none;
     border-radius: 60px;
@@ -124,10 +133,10 @@ body{
 .hero-section{
     background-color: var(--primary-bg-color);
     color: white;
-    padding: 0px 70px;
-    padding-top: 120px;
+    padding-top: 190px;
     padding-bottom: 200px;
-    margin-top: 70px;
+    padding-left: 70px;
+    padding-right: 70px;
     overflow: hidden;
     position: relative;
 }
@@ -139,7 +148,7 @@ body{
 .card-2{
     position: absolute;
     left: -245px;
-    top: 440px;
+    top: 500px;
 }
 .first-line, .second-line{
     position: relative;
@@ -152,6 +161,9 @@ body{
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
     padding: 20px 0px;
+}
+.first-line p, .second-line p{
+    text-align: center;
 }
 .make-your{
     position: relative;
@@ -234,6 +246,11 @@ body{
 .image-slider img{
     max-width: 135px;
     opacity: .6;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.image-slider img:hover{
+    opacity: 1;
 }
 .blue-star{
     position: absolute;
@@ -244,7 +261,8 @@ body{
 }
 
 .about-us-section{
-    padding: 100px 70px;
+    padding: 120px 70px;
+    padding-bottom: 0px;
     display: flex;
     align-items: center;
     gap: 30px;
@@ -307,8 +325,8 @@ body{
 .benefit-section{
     display: flex;
     gap: 80px;
-    padding: 100px 70px;
-    padding-top: 0px;
+    padding: 120px 70px;
+    padding-bottom: 0px;
     overflow: hidden;
 }
 .benefit-left{
@@ -324,7 +342,6 @@ body{
     border-radius: 10px;
     padding: 35px 7px;
     text-align: center;
-    cursor: pointer;
     position: relative;
 }
 .benefit-card::before{
@@ -362,6 +379,7 @@ body{
     font-size: 20px;
     font-weight: 600;
     color: white;
+    cursor: pointer;
 }
 .benefit-card-description{
     color: white;
@@ -392,8 +410,7 @@ body{
 }
 
 .video-section{
-    padding: 0px 70px;
-    padding-bottom: 120px;
+    padding: 120px 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -461,7 +478,6 @@ body{
     display: flex;
     gap: 30px;
     position: relative;
-    cursor: pointer;
 }
 .financial-card:hover .financial-card-left img{
     transform: perspective(1000px) rotateY(180deg);
@@ -488,7 +504,6 @@ body{
     border-radius: 50px;
     font-size: 12px;
 }
-
 .partner-section{
     padding: 120px 70px;
     padding-bottom: 0px;
@@ -541,7 +556,7 @@ body{
 
 .service-section{
     background-color: var(--primary-bg-color);
-    padding: 120px 80px;
+    padding: 120px 30px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -566,6 +581,8 @@ body{
     border-radius: 10px;
     padding: 38px 24px;
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .service-card::before{
     content: "";
@@ -598,14 +615,13 @@ body{
 .service-card-description{
     line-height: 1.6;
     margin-top: 10px;
+    font-size: 16px;
 }
 .learn-more{
-    font-size: 17px;
     font-weight: 600;
     margin-top: 40px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 3px;
     cursor: pointer;
 }
 .learn-more svg{
@@ -803,6 +819,28 @@ body{
     line-height: 34px;
     margin-top: 30px;
 }
+.slider-dots{
+    margin-top: 30px;
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot{
+    cursor: pointer;
+    background-color: #2226;
+    width: 1em;
+    height: 1em;
+    margin: 0 3px .5em;
+    transition: background-color .1s, color .1s;
+    display: inline-block;
+    border-radius: 100%;
+    position: relative;
+}
+.dot.active{
+    background-color: #222;
+}
 
 .app-section{
     padding: 120px 0px;
@@ -914,6 +952,7 @@ body{
 .blog-title{
     font-weight: 600;
     font-size: 22px;
+    cursor: pointer;
     transition: all 0.2s linear;
 }
 .blog-title:hover, .btn-1.read-more:hover{
@@ -930,6 +969,8 @@ body{
     color: white;
     transition: all 0.2s linear;
     justify-content: left;
+    display: inline-flex;
+    align-items: center;
 }
 
 .contactus-section{
@@ -937,20 +978,29 @@ body{
     background-color: var(--primary-bg-color);
     overflow: hidden;
 }
+.contactus-header{
+    padding-bottom: 10px;
+}
+.contactus-title{
+    padding: 0px;
+}
 .contactus-container{
     display: flex;
     align-items: center;
     gap: 30px;
     color: white;
 }
+.contactus-left{
+    position: relative;
+}
 .contactus-left, .contactus-right{
     width: 50%;
 }
-.input-container{
+
+.contactus-form{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 35px;
 }
 .input{
     background-color: transparent;
@@ -973,6 +1023,28 @@ body{
 .text-area{
     resize: none;
     border-radius: 20px;
+    resize: vertical;
+}
+.mail:disabled {
+    cursor: none;
+}
+.email-success, .email-failure{
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+    padding: 20px;
+    color: #333;
+    line-height: 20px;
+    font-size: 14px;
+    display: none;
+}
+.email-success:focus{
+    border: 1px solid #ccc;
+}
+.contactus-form.hidden{
+    visibility: hidden;
 }
 .contactus-right > img{
     max-width: 100%;
@@ -986,11 +1058,16 @@ body{
     color: white;
     overflow: hidden;
 }
-.cpointer, .pointerline{
+.pointerline a, .footer-links li a{
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+.cpointer, .pointerline a{
     cursor: pointer;
     transition: all .3s linear;
 }
-.pointerline:hover{
+.pointerline a:hover{
     text-decoration: underline;
 }
 .footer-navigation-container{
@@ -1027,9 +1104,8 @@ body{
     gap: 10px;
     font-weight: 500;
 }
-.footer-links > li:hover{
+.footer-links li a:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 .horizontal-divider{
     width: 100%;
@@ -1050,8 +1126,8 @@ body{
     text-decoration: underline;
 }
 
-.mobile-menu{
-    width: 50px;
+.mobile-menu, .mobile-menu2{
+    min-width: 50px;
     height: 50px;
     border-radius: 5px;
     display: none;
@@ -1059,10 +1135,11 @@ body{
     justify-content: center;
     color: white;
     background-color: var(--primary-color);
+    margin-left: 20px;
 }
-.mobile-menu > svg{
-    width: 45px;
-    height: 45px;
+.mobile-menu > svg, .mobile-menu2 > svg{
+    width: 100%;
+    height: 100%;
 }
 .slide{
     position: relative;
@@ -1073,11 +1150,14 @@ body{
     position: absolute;
     top: 0;
     left: 100%;
+    display: flex;
 }
 .slider-3{
     position: absolute;
     top: 0;
-    left: 118%;
+    /* left: 118%; */
+    left: 200%;
+    display: flex;
 }
 @keyframes slide{
     0% {
@@ -1111,9 +1191,53 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1313px){
+    .line{
+        height: 75%;
+        left: 19.5%;
+        top: 37%;
+        transform: rotateY(-45deg);
+    }
+}
+
+
+@media (max-width: 1150px){
+    .header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 1096px){
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-links{
+        gap: 10px;
+    }
+}
+
 @media (max-width: 1024px){
+    .header{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
     .logo > img{
         width: 80px;
+    }
+    .nav-links{
+        gap: 20px;
     }
     .get-started{
         display: none;
@@ -1132,8 +1256,9 @@ body{
     }
     .line{
         height: 75%;
-        left: 19%;
+        left: 20%;
         top: 37%;
+        transform: rotateY(-15deg);
     }
     .card-2{
         left: -240px;
@@ -1168,6 +1293,16 @@ body{
     }
 }
 
+@media (max-width: 838px){
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .nav-links{
+        gap: 10px;
+    }
+}
+
 @media (max-width: 768px){
     .logo > img{
         width: 120px;
@@ -1178,12 +1313,13 @@ body{
     }
     .get-started{
         display: flex;
-        gap: 20px;  
     }
     .mobile-menu{
         display: flex;
     }
     .hero-section{
+        padding-top: 180px;
+        padding-bottom: 120px;
         padding-bottom: 120px;
     }
     .first-line, .second-line{
@@ -1337,14 +1473,31 @@ body{
         left: 200%;
     }
     .reverse-slide-2{
-        right: 180%
+        right: 180%;
     }
     .app-tags-container{
         gap: 20px;
     }
 }
+
+@media (max-width: 530px){
+    .header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 472px){
+    .header{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 @media (max-width: 425px){
-    .header,
+    .header{
+        gap: 10px;
+    }
     .about-us-section, 
     .benefit-section, 
     .video-section, 
@@ -1363,8 +1516,13 @@ body{
         display: none;
     }
     .mobile-menu{
-        width: 50px;
+        min-width: 50px;
         height: 50px;
+        margin-left: 10px;
+    }
+    .hero-section{
+        padding-top: 160px;
+        padding-bottom: 100px;
     }
     .first-line, .second-line{
         font-size: 40px;
@@ -1458,14 +1616,11 @@ body{
     .app-tags-container{
         gap: 10px;
     }
-    .slider-2{
-        left: 180%;
-    }
-    .slider-3{
-        left: 346%;
+    .slider-2, .slider-3, .reverse-slide-1{
+        display: none;
     }
     .reverse-slide-2{
-        right: 242%;
+        right: 140%;
     }
     .image-slider{
         gap: 20px;
@@ -1473,5 +1628,28 @@ body{
     }
     .image-slider img{
         min-width: 120px;
+    }
+}
+
+@media (max-width: 381px){
+    .get-started{
+        display: none;
+    }
+    .mobile-menu2{
+        display: block;
+    }
+}
+
+@media (max-width: 375px){
+    .phone{
+        left: 0;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 320px){
+    .phone{
+        left: 0;
+        transform: translateX(-9%);
     }
 }

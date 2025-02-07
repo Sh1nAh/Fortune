@@ -9,36 +9,43 @@
 <body>
     <!-- navbar -->
     <div class="header flex">
-        <div class="logo">
-            <img src="https://cdn.prod.website-files.com/66ee653b96a71ed56eac7b25/66ee67683eb418ef94d76454_logo-white.png" alt="">
-        </div>
+        <a href="/">
+            <div class="logo">
+                <img src="https://cdn.prod.website-files.com/66ee653b96a71ed56eac7b25/66ee67683eb418ef94d76454_logo-white.png" alt="">
+            </div>
+        </a>
         <div class="navigation">
             <ul class="nav-links flex">
-                <li><a href="#hero-section">Home</a></li>
-                <li><a href="#about-us-section">About Us</a></li>
-                <li><a href="#service-section">Services</a></li>
-                <li><a href="">Pricing</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a class="nav-link" href="#hero-section">Home</a></li>
+                <li><a class="nav-link" href="#about-us-section">About Us</a></li>
+                <li><a class="nav-link" href="#service-section">Services</a></li>
+                <li><a class="nav-link" href="#pricing-section">Pricing</a></li>
+                <li><a class="nav-link" href="#blog-section">Blog</a></li>
+                <li><a class="nav-link" href="#contactus-section">Contact</a></li>
             </ul>
         </div>
         <div class="get-started">
-            <button class="btn-1">
-                <!-- <p data-text="Get started">Get started</p> -->
-                <div class="text">
-                    <p class="p1">Get started</p>
-                    <p class="p2">Get started</p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
-            </button>
+            <a href="#contactus-section">
+                <button class="btn-1">
+                    <!-- <p data-text="Get started">Get started</p> -->
+                    <div class="text">
+                        <p class="p1">Get started</p>
+                        <p class="p2">Get started</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
+                </button>
+            </a>
             <div class="mobile-menu">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z"/></svg>
             </div>
         </div>
+        <div class="mobile-menu2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M4.5 17.27q-.213 0-.356-.145T4 16.768t.144-.356t.356-.143h15q.213 0 .356.144q.144.144.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.144T4 11.999t.144-.356t.356-.143h15q.213 0 .356.144t.144.357t-.144.356t-.356.143zm0-4.77q-.213 0-.356-.143Q4 7.443 4 7.23t.144-.356t.356-.143h15q.213 0 .356.144T20 7.23t-.144.356t-.356.144z"/></svg>
+        </div>
     </div>
 
     <!-- hero section -->
-    <div id="hero-section" class="hero-section">
+    <div id="hero-section" class="hero-section section">
         <img class="card-1" src="https://cdn.prod.website-files.com/66ee653b96a71ed56eac7b25/66ee695fe7ba9ae41a5c62c9_Cart%20Glass%207%201-p-500.png" alt="">
         <img class="card-2" src="https://cdn.prod.website-files.com/66ee653b96a71ed56eac7b25/675403a837014405c0e29eca_66ee69f28d146a66b790b595_Cart-Glass-8-1.png" alt="">
         <div class="first-line">
@@ -51,19 +58,23 @@
         </div>
         <p class="hero-description">Join us for the Design Conference and get inspired by the latest ideas and techniques from the best in the business!</p>
         <div class="button-container">
-            <button class="btn">
-                <div class="text">
-                    <p class="p1">Get started</p>
-                    <p class="p2">Get started</p>
-                </div>
-            </button>
-            <button class="btn-2">
-                <div class="text">
-                    <p class="p1">Learn More</p>
-                    <p class="p2">Learn More</p>
-                </div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
-            </button>
+            <a href="#contactus-section">
+                <button class="btn">
+                    <div class="text">
+                        <p class="p1">Get started</p>
+                        <p class="p2">Get started</p>
+                    </div>
+                </button>
+            </a>
+            <a href="#benefit-section">
+                <button class="btn-2">
+                    <div class="text">
+                        <p class="p1">Learn More</p>
+                        <p class="p2">Learn More</p>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="currentColor" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
+                </button>
+            </a>
         </div>
         
         <div class="slide-container">
@@ -95,7 +106,7 @@
     </div>
 
     <!-- about us -->
-    <div id="about-us-section" class="about-us-section">
+    <div id="about-us-section" class="about-us-section section">
         <div class="about-us-left">
             <div class="about-us-header">
                 <div class="header-line"></div>
@@ -130,7 +141,7 @@
     </div>
 
     <!-- benefits -->
-    <div id="benefit-section" class="benefit-section">
+    <div id="benefit-section" class="benefit-section section">
         <div class="benefit-left">
             <div class="benefit-cards-container">
                 <div class="benefit-card">
@@ -219,7 +230,7 @@
     </div>
 
     <!-- video -->
-    <div class="video-section">
+    <div class="video-section section">
         <div class="about-us-header">
             <div class="header-line"></div>
             <p>Video</p>
@@ -239,7 +250,7 @@
     </div>
 
     <!-- financial -->
-    <div class="financial-section">
+    <div class="financial-section section">
         <div class="about-us-header">
             <div class="header-line line-white"></div>
             <p>Our benefits</p>
@@ -308,7 +319,7 @@
     </div>
 
     <!-- partners -->
-    <div class="partner-section">
+    <div class="partner-section section">
         <div class="partner-left">
             <div class="about-us-header">
                 <div class="header-line line-white"></div>
@@ -337,7 +348,7 @@
     </div>
 
     <!-- our services -->
-    <div id="service-section" class="service-section">
+    <div id="service-section" class="service-section section">
         <div class="about-us-header">
             <div class="header-line line-white"></div>
             <p>Our services</p>
@@ -409,13 +420,15 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"/></svg>
             </div>
         </div>
-        <div class="question-button">
-            <p>Have any questions? Contact us now.</p>
-        </div>
+        <a href="#contactus-section">
+            <div class="question-button">
+                <p>Have any questions? Contact us now.</p>
+            </div>
+        </a>
     </div>
 
     <!-- pricing plans -->
-    <div class="pricing-section">
+    <div id="pricing-section" class="pricing-section section">
         <div class="about-us-header">
             <div class="header-line"></div>
             <p>Pricing plans</p>
@@ -424,8 +437,8 @@
             Smart Ways to Grow Your Money
         </p>
         <div class="price-tags-container">
-            <div class="price-tag active">Monthly</div>
-            <div class="price-tag">Annual</div>
+            <div id="price-tag" class="price-tag active">Monthly</div>
+            <div id="price-tag" class="price-tag">Annual</div>
         </div>
 
         <div class="pricing-cards-container">
@@ -458,12 +471,14 @@
                     </div>
                     <p>per month</p>
                 </div>
-                <button class="btn">
-                    <div class="text">
-                        <p class="p1">Select Plan</p>
-                        <p class="p2">Select Plan</p>
-                    </div>
-                </button>
+                <a href="#contactus-section">
+                    <button class="btn">
+                        <div class="text">
+                            <p class="p1">Select Plan</p>
+                            <p class="p2">Select Plan</p>
+                        </div>
+                    </button>
+                </a>
             </div>
 
             <div class="pricing-card second-pricing-card">
@@ -495,12 +510,14 @@
                     </div>
                     <p>per month</p>
                 </div>
-                <button class="btn">
-                    <div class="text">
-                        <p class="p1">Select Plan</p>
-                        <p class="p2">Select Plan</p>
-                    </div>
-                </button>
+                <a href="#contactus-section">
+                    <button class="btn">
+                        <div class="text">
+                            <p class="p1">Select Plan</p>
+                            <p class="p2">Select Plan</p>
+                        </div>
+                    </button>
+                </a>
             </div>
 
             <div class="pricing-card">
@@ -532,18 +549,20 @@
                     </div>
                     <p>per month</p>
                 </div>
-                <button class="btn">
-                    <div class="text">
-                        <p class="p1">Select Plan</p>
-                        <p class="p2">Select Plan</p>
-                    </div>
-                </button>
+                <a href="#contactus-section">
+                    <button class="btn">
+                        <div class="text">
+                            <p class="p1">Select Plan</p>
+                            <p class="p2">Select Plan</p>
+                        </div>
+                    </button>
+                </a>
             </div>
         </div>
     </div>
 
     <!-- testimonial -->
-    <div class="testimonial-section">
+    <div class="testimonial-section section">
         <div class="about-us-header">
             <div class="header-line"></div>
             <p>Our testimonials</p>
@@ -670,10 +689,14 @@
                 </p>
             </div>
         </div>
+        <div class="slider-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+        </div>
     </div>
 
     <!-- our app -->
-    <div class="app-section">
+    <div class="app-section section">
         <div class="about-us-header">
             <div class="header-line"></div>
             <p>Our App</p>
@@ -865,7 +888,7 @@
     </div>
 
     <!-- blog section -->
-    <div class="blog-section">
+    <div id="blog-section" class="blog-section section">
         <div class="about-us-header">
             <div class="header-line line-white"></div>
             <p>Blog & news</p>
@@ -919,22 +942,32 @@
     </div>
 
     <!-- contact us section -->
-    <div class="contactus-section">
+    <div id="contactus-section" class="contactus-section section">
         <div class="contactus-container">
             <div class="contactus-left">
-                <div class="about-us-header contactus-header">
-                    <div class="header-line line-white"></div>
-                    <p>Contact us</p>
+                <div style="margin-bottom: 50px;">
+                    <div class="about-us-header contactus-header">
+                        <div class="header-line line-white"></div>
+                        <p>Contact us</p>
+                    </div>
+                    <p class="main-title contactus-title">
+                        Get In Touch With Us
+                    </p>
                 </div>
-                <p class="main-title contactus-title">
-                    Get In Touch With Us
-                </p>
                 <div class="input-container">
-                    <input class="input" type="text" placeholder="Your Name">
-                    <input class="input" type="email" placeholder="Your E-mail">
-                    <input class="input" type="tel" placeholder="Your Phone">
-                    <textarea class="input text-area" rows="5" placeholder="Example Text"></textarea>
-                    <button class="btn-1">Submit</button>
+                    <form action="" method="POST" class="contactus-form" id="contact-form">
+                        <input class="input" type="text" placeholder="Your Name" required>
+                        <input class="input" type="email" placeholder="Your E-mail" required>
+                        <input class="input" type="tel" placeholder="Your Phone" required>
+                        <textarea class="input text-area" rows="5" placeholder="Example Text" required></textarea>
+                        <button class="btn-1 mail" id="submit-button" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="email-success">
+                    <p>Thank you! Your submission has been received!</p>
+                </div>
+                <div class="email-failure">
+                    <p>Oops! Something went wrong while submitting the form.</p>
                 </div>
             </div>
             <div class="contactus-right">
@@ -944,17 +977,23 @@
     </div>
 
     <!-- footer section -->
-    <div class="footer-section">
+    <div class="footer-section section">
         <div class="footer-navigation-container">
             <div class="footer-navigation first-navigation">
-                <img class="footer-logo cpointer" src="https://cdn.prod.website-files.com/66ee653b96a71ed56eac7b25/66ee67683eb418ef94d76454_logo-white.png" alt="">
+                <a href="/">
+                    <img class="footer-logo cpointer" src="https://cdn.prod.website-files.com/66ee653b96a71ed56eac7b25/66ee67683eb418ef94d76454_logo-white.png" alt="">
+                </a>
                 <div class="footer-phone">
                     <p>Phone</p>
-                    <p class="pointerline">(208) 555-0112</p>
+                    <p class="pointerline">
+                        <a href="tel:(208)555-0112">(208) 555-0112</a>
+                    </p>
                 </div>
                 <div class="footer-email">
                     <p>E-Mail</p>
-                    <p class="pointerline">fortune@gmail.com</p>
+                    <p class="pointerline">
+                        <a href="mailto:fortune@gmail.com">fortune@gmail.com</a>
+                    </p>
                 </div>
                 <div class="social-icon-container">
                     <svg class="cpointer" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
@@ -966,22 +1005,22 @@
             <div class="footer-navigation">
                 <p>Sections</p>
                 <ul class="footer-links">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Blogs</li>
-                    <li>Contact</li>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#about-us-section">About</a></li>
+                    <li><a href="#service-section">Services</a></li>
+                    <li><a href="#blog-section">Blogs</a></li>
+                    <li><a href="#contactus-section">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-navigation">
                 <p>Pages</p>
                 <ul class="footer-links">
-                    <li>Home</li>
-                    <li>License</li>
-                    <li>Changelog</li>
-                    <li>Style Guide</li>
-                    <li>Blog Single</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#license">License</a></li>
+                    <li><a href="#changelog">Changelog</a></li>
+                    <li><a href="#style-guide">Style Guide</a></li>
+                    <li><a href="#blog-single">Blog Single</a></li>
                 </ul>
             </div>
         </div>
@@ -991,5 +1030,7 @@
             © Copyright - <span>Fortune</span> | Designed by <span>Skyeflow</span> - License Powered by <span>Webflow</span>
         </p>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
