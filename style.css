@@ -1461,7 +1461,7 @@ body{
         display: flex;
         align-items: center;
         gap: 15px;
-        margin-top: 34px;
+        padding-top: 34px;
     }
     .image-slider{
         gap: 50px;
