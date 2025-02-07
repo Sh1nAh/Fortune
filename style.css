@@ -582,7 +582,6 @@ body{
     padding: 38px 24px;
     position: relative;
     width: 100%;
-    height: 100%;
 }
 .service-card::before{
     content: "";
@@ -1461,7 +1460,7 @@ body{
         display: flex;
         align-items: center;
         gap: 15px;
-        padding-top: 34px;
+        margin-top: 34px;
     }
     .image-slider{
         gap: 50px;
