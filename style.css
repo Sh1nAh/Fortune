@@ -1515,7 +1515,7 @@ body{
     .get-started > .btn-1{
         display: none;
     }
-    .mobile-menu{
+    .mobile-menu, .mobile-menu2{
         min-width: 50px;
         height: 50px;
         margin-left: 10px;
